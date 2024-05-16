@@ -11,7 +11,7 @@
             crossorigin="anonymous"></script>
         <link href="styles.css" rel="stylesheet">
 
-        <title>My Webpage - Homepage</title>
+        <title>My Webpage - Hobbies</title>
     </head>
 
     <body class="body">
@@ -50,11 +50,10 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3"
                                 style="--bs-nav-link-color: var(--text-grey); --bs-nav-link-hover-color: white;">
-                                <li class="nav-item active"><a class="nav-link" href="/index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
                                 <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-                                <li class="nav-item"><a class="nav-link" href="/hobbies">Hobbies</a></li>
+                                <li class="nav-item active"><a class="nav-link" href="/hobbies">Hobbies</a></li>
                                 <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
-
                             </ul>
                         </div>
                     </div>
@@ -63,33 +62,64 @@
         </header>
         <main class="main">
             <div class="container-md">
-                <ul class="nav text-grey bg-sub-nav"
+                <ul class="nav text-grey"
                     style="--bs-nav-link-color: var(--text-grey); --bs-nav-link-hover-color: white;">
-                    <li class="nav-item active"><a class="nav-link" href="/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/hobbies">Hobbies</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="/hobbies">Hobbies</a></li>
                     <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
                 </ul>
             </div>
-            <div class="container-md">
-                <div class="row align-items-center justify-content-center g-5" style="margin: 220px 0;">
-                    <div class="col-md-4 col-lg-3  order-md-1">
-                        <img src="/images/avatar.png" alt="avatar" style="width: 16rem; max-width:100%">
+            <section class="container-md">
+                <div class="row gy-5" style="margin: 220px 0;">
+                    <h1 class="text-center text-white mb-5">Personal Interests</h1>
+                    <div class="position-relative row mb-5">
+                        <img class="col-12" src="/images/hobbies.png" alt="hobbies image" style="max-width:100%">
+                        <h2 class="position-absolute top-0 start-0 col-md-6 text-white px-4 m-2 m-md-4">When I’m not
+                            coding, you’ll find me at a coffee shop, sipping my favorite brew and brainstorming the next
+                            big idea. </h2>
                     </div>
-                    <div class="col-md-8 col-lg-5 text-white">
-                        <div class="row gy-3">
-                            <p class="fw-bold" style="font-size: 2.25rem;">Do Anh Tuan</p>
-                            <p class="my-4">Coding with a touch of creativity and a dash of cafe culture. A developer
-                                with a passion for technology and life's simple pleasures.</p>
-                            <div class="col">
-                                <button type="button" class="btn btn-light fw-bold">Blog</button>
-                                <button type="button" class="btn fw-bold text-white bg-transparent">Porfolio</button>
-                            </div>
+                    <div class="row align-items-center justify-content-between mb-5">
+                        <div class="col-md-6 col-lg-5 mb-3">
+                            <img src="/images/hobbies-dota2.png" alt="hobbies image" style="max-width:100%">
+                        </div>
+                        <div class="col-md-6 col-lg-5 text-white text-md-end">
+                            <p class="tw-bold fs-4">I’m an avid Dota 2 player and have been enjoying the game for over
+                                14 years. </p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center justify-content-between mb-5">
+                        <div class="col-md-6 col-lg-5 mb-3">
+                            <img src="/images/hobbies-balance-life.png" alt="hobbies image" style="max-width:100%">
+                        </div>
+                        <div class="col-md-6 col-lg-5 text-white">
+                            <p class="tw-bold fs-4">I believe in a balanced lifestyle, so I make time for running, which
+                                keeps me fit and ready to take on the challenges of the day.</p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center justify-content-between mb-5">
+                        <div class="col-md-6 col-lg-5 mb-3">
+                            <img src="/images/hobbies-optimize.png" alt="hobbies image" style="max-width:100%">
+                        </div>
+                        <div class="col-md-6 col-lg-5 text-white text-md-end">
+                            <p class="tw-bold fs-4">I have a penchant for optimization, whether it’s the clothes I wear,
+                                the money I spend, or the code I write.
+                                My goal is to make life as simple and efficient as possible.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center justify-content-between mb-5">
+                        <div class="col-md-6 col-lg-5 mb-3">
+                            <img src="/images/hobbies-love-apple-products.png" alt="hobbies image"
+                                style="max-width:100%">
+                        </div>
+                        <div class="col-md-6 col-lg-5 text-white">
+                            <p class="tw-bold fs-4">I’m drawn to the sleek design and functionality of Apple products,
+                                and I appreciate the seamless integration of their ecosystem.</p>
                         </div>
                     </div>
                 </div>
-
-            </div>
+            </section>
         </main>
         <footer class="bg-black">
             <div class="container-md d-flex justify-content-between align-items-center">

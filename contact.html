@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+            crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+
+        <title>My Webpage - Contact</title>
+    </head>
+
+    <body class="body">
+        <header>
+            <nav class="navbar navbar-dark bg-black fixed-top">
+                <div class="container-md">
+                    <a class="navbar-brand" href="/index.html">
+                        <svg width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="30" height="27" fill="#525252" />
+                            <path
+                                d="M7.01705 19H4.38068L8.39773 7.36364H11.5682L15.5795 19H12.9432L10.0284 10.0227H9.9375L7.01705 19ZM6.85227 14.4261H13.0795V16.3466H6.85227V14.4261ZM15.1151 9.39205V7.36364H24.6719V9.39205H21.1094V19H18.6776V9.39205H15.1151Z"
+                                fill="white" />
+                        </svg>
+                        <span class="fw-bold text-white fs-6 align-middle">Do Anh Tuan’s site </span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar">
+                        <div class="offcanvas-header">
+                            <a class="navbar-brand" href="/index.html">
+                                <svg width="30" height="27" viewBox="0 0 30 27" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="30" height="27" fill="#525252" />
+                                    <path
+                                        d="M7.01705 19H4.38068L8.39773 7.36364H11.5682L15.5795 19H12.9432L10.0284 10.0227H9.9375L7.01705 19ZM6.85227 14.4261H13.0795V16.3466H6.85227V14.4261ZM15.1151 9.39205V7.36364H24.6719V9.39205H21.1094V19H18.6776V9.39205H15.1151Z"
+                                        fill="white" />
+                                </svg>
+                                <span class="fw-bold text-white fs-6 align-middle">Do Anh Tuan’s site </span>
+                            </a>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3"
+                                style="--bs-nav-link-color: var(--text-grey); --bs-nav-link-hover-color: white;">
+                                <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/hobbies">Hobbies</a></li>
+                                <li class="nav-item active"><a class="nav-link" href="/contact">Contact</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="container-md">
+                <ul class="nav text-grey"
+                    style="--bs-nav-link-color: var(--text-grey); --bs-nav-link-hover-color: white;">
+                    <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/hobbies">Hobbies</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="/contact">Contact</a></li>
+                </ul>
+            </div>
+            <section class="container-md">
+
+                <div class="row align-items-center justify-content-center g-5" style="margin: 220px 0;">
+                    <div class="text-center">
+                        <h1 class="text-white">Contact Me</h1>
+                        <p class="text-grey">Let's connect and create something amazing together.</p>
+                    </div>
+                    <div class="row gy-3">
+                        <div class="col-md-6">
+                            <img src="/images/contact.png" alt="avatar" style="max-width:100%">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="firstName" class="form-label text-white">First name</label>
+                                <input type="text" class="form-control bg-transparent text-white" id="firstName"
+                                    placeholder="Your first name...">
+                            </div>
+                            <div class="mb-3">
+                                <label for="lastName" class="form-label text-white">Last name</label>
+                                <input type="text" class="form-control bg-transparent text-white" id="lastName"
+                                    placeholder="Your last name...">
+                            </div>
+                            <div class="mb-3">
+                                <label for="country" class="form-label text-white">Country</label>
+                                <select id="country" class="form-select bg-transparent text-white"
+                                    aria-label="Your country...">
+                                    <option value="" selected disabled>Select a country</option>
+                                    <option value="Afghanistan">Afghanistan</option>
+                                    <option value="Åland Islands">Åland Islands</option>
+                                    <option value="Albania">Albania</option>
+                                    <option value="Algeria">Algeria</option>
+                                    <option value="American Samoa">American Samoa</option>
+                                    <option value="Andorra">Andorra</option>
+                                    <option value="Angola">Angola</option>
+                                    <option value="Anguilla">Anguilla</option>
+                                    <option value="Antarctica">Antarctica</option>
+                                    <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                                    <option value="Argentina">Argentina</option>
+                                    <option value="Armenia">Armenia</option>
+                                    <option value="Aruba">Aruba</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="Austria">Austria</option>
+                                    <option value="Azerbaijan">Azerbaijan</option>
+                                    <option value="Bahamas">Bahamas</option>
+                                    <option value="Bahrain">Bahrain</option>
+                                    <option value="Bangladesh">Bangladesh</option>
+                                    <option value="Barbados">Barbados</option>
+                                    <option value="Belarus">Belarus</option>
+                                    <option value="Belgium">Belgium</option>
+                                    <option value="Belize">Belize</option>
+                                    <option value="Benin">Benin</option>
+                                    <option value="Bermuda">Bermuda</option>
+                                    <option value="Bhutan">Bhutan</option>
+                                    <option value="Bolivia">Bolivia</option>
+                                    <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                                    <option value="Botswana">Botswana</option>
+                                    <option value="Bouvet Island">Bouvet Island</option>
+                                    <option value="Brazil">Brazil</option>
+                                    <option value="British Indian Ocean Territory">British Indian Ocean Territory
+                                    </option>
+                                    <option value="Brunei Darussalam">Brunei Darussalam</option>
+                                    <option value="Bulgaria">Bulgaria</option>
+                                    <option value="Burkina Faso">Burkina Faso</option>
+                                    <option value="Burundi">Burundi</option>
+                                    <option value="Cambodia">Cambodia</option>
+                                    <option value="Cameroon">Cameroon</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="Cape Verde">Cape Verde</option>
+                                    <option value="Cayman Islands">Cayman Islands</option>
+                                    <option value="Central African Republic">Central African Republic</option>
+                                    <option value="Chad">Chad</option>
+                                    <option value="Chile">Chile</option>
+                                    <option value="China">China</option>
+                                    <option value="Christmas Island">Christmas Island</option>
+                                    <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                                    <option value="Colombia">Colombia</option>
+                                    <option value="Comoros">Comoros</option>
+                                    <option value="Congo">Congo</option>
+                                    <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic
+                                        of The</option>
+                                    <option value="Cook Islands">Cook Islands</option>
+                                    <option value="Costa Rica">Costa Rica</option>
+                                    <option value="Cote D'ivoire">Cote D'ivoire</option>
+                                    <option value="Croatia">Croatia</option>
+                                    <option value="Cuba">Cuba</option>
+                                    <option value="Cyprus">Cyprus</option>
+                                    <option value="Czech Republic">Czech Republic</option>
+                                    <option value="Denmark">Denmark</option>
+                                    <option value="Djibouti">Djibouti</option>
+                                    <option value="Dominica">Dominica</option>
+                                    <option value="Dominican Republic">Dominican Republic</option>
+                                    <option value="Ecuador">Ecuador</option>
+                                    <option value="Egypt">Egypt</option>
+                                    <option value="El Salvador">El Salvador</option>
+                                    <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                    <option value="Eritrea">Eritrea</option>
+                                    <option value="Estonia">Estonia</option>
+                                    <option value="Ethiopia">Ethiopia</option>
+                                    <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+                                    <option value="Faroe Islands">Faroe Islands</option>
+                                    <option value="Fiji">Fiji</option>
+                                    <option value="Finland">Finland</option>
+                                    <option value="France">France</option>
+                                    <option value="French Guiana">French Guiana</option>
+                                    <option value="French Polynesia">French Polynesia</option>
+                                    <option value="French Southern Territories">French Southern Territories</option>
+                                    <option value="Gabon">Gabon</option>
+                                    <option value="Gambia">Gambia</option>
+                                    <option value="Georgia">Georgia</option>
+                                    <option value="Germany">Germany</option>
+                                    <option value="Ghana">Ghana</option>
+                                    <option value="Gibraltar">Gibraltar</option>
+                                    <option value="Greece">Greece</option>
+                                    <option value="Greenland">Greenland</option>
+                                    <option value="Grenada">Grenada</option>
+                                    <option value="Guadeloupe">Guadeloupe</option>
+                                    <option value="Guam">Guam</option>
+                                    <option value="Guatemala">Guatemala</option>
+                                    <option value="Guernsey">Guernsey</option>
+                                    <option value="Guinea">Guinea</option>
+                                    <option value="Guinea-bissau">Guinea-bissau</option>
+                                    <option value="Guyana">Guyana</option>
+                                    <option value="Haiti">Haiti</option>
+                                    <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands
+                                    </option>
+                                    <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+                                    <option value="Honduras">Honduras</option>
+                                    <option value="Hong Kong">Hong Kong</option>
+                                    <option value="Hungary">Hungary</option>
+                                    <option value="Iceland">Iceland</option>
+                                    <option value="India">India</option>
+                                    <option value="Indonesia">Indonesia</option>
+                                    <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+                                    <option value="Iraq">Iraq</option>
+                                    <option value="Ireland">Ireland</option>
+                                    <option value="Isle of Man">Isle of Man</option>
+                                    <option value="Israel">Israel</option>
+                                    <option value="Italy">Italy</option>
+                                    <option value="Jamaica">Jamaica</option>
+                                    <option value="Japan">Japan</option>
+                                    <option value="Jersey">Jersey</option>
+                                    <option value="Jordan">Jordan</option>
+                                    <option value="Kazakhstan">Kazakhstan</option>
+                                    <option value="Kenya">Kenya</option>
+                                    <option value="Kiribati">Kiribati</option>
+                                    <option value="Korea, Democratic People's Republic of">Korea, Democratic People's
+                                        Republic of</option>
+                                    <option value="Korea, Republic of">Korea, Republic of</option>
+                                    <option value="Kuwait">Kuwait</option>
+                                    <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                    <option value="Lao People's Democratic Republic">Lao People's Democratic Republic
+                                    </option>
+                                    <option value="Latvia">Latvia</option>
+                                    <option value="Lebanon">Lebanon</option>
+                                    <option value="Lesotho">Lesotho</option>
+                                    <option value="Liberia">Liberia</option>
+                                    <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+                                    <option value="Liechtenstein">Liechtenstein</option>
+                                    <option value="Lithuania">Lithuania</option>
+                                    <option value="Luxembourg">Luxembourg</option>
+                                    <option value="Macao">Macao</option>
+                                    <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former
+                                        Yugoslav Republic of</option>
+                                    <option value="Madagascar">Madagascar</option>
+                                    <option value="Malawi">Malawi</option>
+                                    <option value="Malaysia">Malaysia</option>
+                                    <option value="Maldives">Maldives</option>
+                                    <option value="Mali">Mali</option>
+                                    <option value="Malta">Malta</option>
+                                    <option value="Marshall Islands">Marshall Islands</option>
+                                    <option value="Martinique">Martinique</option>
+                                    <option value="Mauritania">Mauritania</option>
+                                    <option value="Mauritius">Mauritius</option>
+                                    <option value="Mayotte">Mayotte</option>
+                                    <option value="Mexico">Mexico</option>
+                                    <option value="Micronesia, Federated States of">Micronesia, Federated States of
+                                    </option>
+                                    <option value="Moldova, Republic of">Moldova, Republic of</option>
+                                    <option value="Monaco">Monaco</option>
+                                    <option value="Mongolia">Mongolia</option>
+                                    <option value="Montenegro">Montenegro</option>
+                                    <option value="Montserrat">Montserrat</option>
+                                    <option value="Morocco">Morocco</option>
+                                    <option value="Mozambique">Mozambique</option>
+                                    <option value="Myanmar">Myanmar</option>
+                                    <option value="Namibia">Namibia</option>
+                                    <option value="Nauru">Nauru</option>
+                                    <option value="Nepal">Nepal</option>
+                                    <option value="Netherlands">Netherlands</option>
+                                    <option value="Netherlands Antilles">Netherlands Antilles</option>
+                                    <option value="New Caledonia">New Caledonia</option>
+                                    <option value="New Zealand">New Zealand</option>
+                                    <option value="Nicaragua">Nicaragua</option>
+                                    <option value="Niger">Niger</option>
+                                    <option value="Nigeria">Nigeria</option>
+                                    <option value="Niue">Niue</option>
+                                    <option value="Norfolk Island">Norfolk Island</option>
+                                    <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                                    <option value="Norway">Norway</option>
+                                    <option value="Oman">Oman</option>
+                                    <option value="Pakistan">Pakistan</option>
+                                    <option value="Palau">Palau</option>
+                                    <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied
+                                    </option>
+                                    <option value="Panama">Panama</option>
+                                    <option value="Papua New Guinea">Papua New Guinea</option>
+                                    <option value="Paraguay">Paraguay</option>
+                                    <option value="Peru">Peru</option>
+                                    <option value="Philippines">Philippines</option>
+                                    <option value="Pitcairn">Pitcairn</option>
+                                    <option value="Poland">Poland</option>
+                                    <option value="Portugal">Portugal</option>
+                                    <option value="Puerto Rico">Puerto Rico</option>
+                                    <option value="Qatar">Qatar</option>
+                                    <option value="Reunion">Reunion</option>
+                                    <option value="Romania">Romania</option>
+                                    <option value="Russian Federation">Russian Federation</option>
+                                    <option value="Rwanda">Rwanda</option>
+                                    <option value="Saint Helena">Saint Helena</option>
+                                    <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                                    <option value="Saint Lucia">Saint Lucia</option>
+                                    <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                                    <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines
+                                    </option>
+                                    <option value="Samoa">Samoa</option>
+                                    <option value="San Marino">San Marino</option>
+                                    <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                                    <option value="Saudi Arabia">Saudi Arabia</option>
+                                    <option value="Senegal">Senegal</option>
+                                    <option value="Serbia">Serbia</option>
+                                    <option value="Seychelles">Seychelles</option>
+                                    <option value="Sierra Leone">Sierra Leone</option>
+                                    <option value="Singapore">Singapore</option>
+                                    <option value="Slovakia">Slovakia</option>
+                                    <option value="Slovenia">Slovenia</option>
+                                    <option value="Solomon Islands">Solomon Islands</option>
+                                    <option value="Somalia">Somalia</option>
+                                    <option value="South Africa">South Africa</option>
+                                    <option value="South Georgia and The South Sandwich Islands">South Georgia and The
+                                        South Sandwich Islands</option>
+                                    <option value="Spain">Spain</option>
+                                    <option value="Sri Lanka">Sri Lanka</option>
+                                    <option value="Sudan">Sudan</option>
+                                    <option value="Suriname">Suriname</option>
+                                    <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+                                    <option value="Swaziland">Swaziland</option>
+                                    <option value="Sweden">Sweden</option>
+                                    <option value="Switzerland">Switzerland</option>
+                                    <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+                                    <option value="Taiwan">Taiwan</option>
+                                    <option value="Tajikistan">Tajikistan</option>
+                                    <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+                                    <option value="Thailand">Thailand</option>
+                                    <option value="Timor-leste">Timor-leste</option>
+                                    <option value="Togo">Togo</option>
+                                    <option value="Tokelau">Tokelau</option>
+                                    <option value="Tonga">Tonga</option>
+                                    <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                                    <option value="Tunisia">Tunisia</option>
+                                    <option value="Turkey">Turkey</option>
+                                    <option value="Turkmenistan">Turkmenistan</option>
+                                    <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                                    <option value="Tuvalu">Tuvalu</option>
+                                    <option value="Uganda">Uganda</option>
+                                    <option value="Ukraine">Ukraine</option>
+                                    <option value="United Arab Emirates">United Arab Emirates</option>
+                                    <option value="United Kingdom">United Kingdom</option>
+                                    <option value="United States">United States</option>
+                                    <option value="United States Minor Outlying Islands">United States Minor Outlying
+                                        Islands</option>
+                                    <option value="Uruguay">Uruguay</option>
+                                    <option value="Uzbekistan">Uzbekistan</option>
+                                    <option value="Vanuatu">Vanuatu</option>
+                                    <option value="Venezuela">Venezuela</option>
+                                    <option value="Viet Nam">Viet Nam</option>
+                                    <option value="Virgin Islands, British">Virgin Islands, British</option>
+                                    <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+                                    <option value="Wallis and Futuna">Wallis and Futuna</option>
+                                    <option value="Western Sahara">Western Sahara</option>
+                                    <option value="Yemen">Yemen</option>
+                                    <option value="Zambia">Zambia</option>
+                                    <option value="Zimbabwe">Zimbabwe</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label text-white">Subject</label>
+                                <textarea class="form-control bg-transparent text-white"
+                                    id="exampleFormControlTextarea1" rows="3"
+                                    placeholder="Write something..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-black">
+            <div class="container-md d-flex justify-content-between align-items-center">
+                <span class="footer-copyright">2024 © Do Anh Tuan</span>
+                <ul class="footer-social-links">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/AnhtuanUit/">
+                            <svg width="26" height="27" viewBox="0 0 26 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M21.9787 0H3.60023C2.6454 0 1.72966 0.40038 1.05449 1.11306C0.379309 1.82576 0 2.79236 0 3.80026V23.1997C0 24.2077 0.379309 25.1743 1.05449 25.8869C1.72966 26.5996 2.6454 27 3.60023 27H11.9646V17.145H8.80235V13.3009H11.9646V10.4693C11.9646 8.86444 12.385 7.61738 13.2259 6.73144C14.0668 5.84382 15.2067 5.39832 16.6471 5.39832C18.0891 5.39832 19.0227 5.45738 19.4496 5.56876V8.99101H17.5279C16.8341 8.99101 16.3609 9.14626 16.1067 9.45676C15.8541 9.76557 15.7278 10.2313 15.7278 10.8506V13.3009H19.3297L18.8501 17.145H15.7278V27H21.9787C22.9336 27 23.8493 26.5996 24.5244 25.8869C25.1997 25.1743 25.5789 24.2077 25.5789 23.1997V3.80026C25.5789 2.79236 25.1997 1.82576 24.5244 1.11306C23.8493 0.40038 22.9336 0 21.9787 0Z"
+                                    fill="#C8C8C8" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/at7194/">
+                            <svg width="28" height="27" viewBox="0 0 28 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M25.4254 0H2.56078C1.46641 0 0.578857 0.86638 0.578857 1.93415V25.0664C0.578857 26.1336 1.46641 27 2.56078 27H25.4254C26.5214 27 27.4089 26.1331 27.4089 25.0664V1.93415C27.4089 0.865837 26.5208 0 25.4254 0ZM8.71121 22.6024H4.65888V10.4107H8.71121V22.6024ZM6.68531 8.74523H6.65817C5.29889 8.74523 4.41948 7.80882 4.41948 6.63899C4.41948 5.4431 5.32603 4.53275 6.71191 4.53275C8.09834 4.53275 8.95115 5.4431 8.97829 6.63899C8.97829 7.80882 8.09779 8.74523 6.68531 8.74523ZM23.324 22.6024H19.2717V16.0785C19.2717 14.4402 18.6854 13.3219 17.2192 13.3219C16.0999 13.3219 15.4332 14.076 15.1396 14.8045C15.0326 15.0645 15.0066 15.4282 15.0066 15.793V22.6019H10.9542C10.9542 22.6019 11.0074 11.5528 10.9542 10.4101H15.0066V12.1358C15.5451 11.3053 16.5081 10.1224 18.6594 10.1224C21.3253 10.1224 23.3246 11.8655 23.3246 15.6106L23.324 22.6024Z"
+                                    fill="#C8C8C8" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/anhtuanUit">
+                            <svg width="28" height="27" viewBox="0 0 28 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24.5161 0H3.30179C1.70469 0 0.408936 1.29576 0.408936 2.89286V24.1071C0.408936 25.7042 1.70469 27 3.30179 27H24.5161C26.1132 27 27.4089 25.7042 27.4089 24.1071V2.89286C27.4089 1.29576 26.1132 0 24.5161 0ZM17.1212 23.1248C16.615 23.2152 16.4281 22.9018 16.4281 22.6426C16.4281 22.3172 16.4402 20.6538 16.4402 19.3098C16.4402 18.3696 16.1268 17.773 15.7592 17.4596C17.9891 17.2125 20.3395 16.9051 20.3395 13.054C20.3395 11.9571 19.9478 11.4087 19.3089 10.7036C19.4114 10.4444 19.7549 9.37768 19.2065 7.99152C18.3688 7.73237 16.4522 9.07031 16.4522 9.07031C15.6567 8.84732 14.7949 8.73281 13.9451 8.73281C13.0953 8.73281 12.2335 8.84732 11.438 9.07031C11.438 9.07031 9.52144 7.73237 8.68371 7.99152C8.13527 9.37165 8.47278 10.4384 8.58126 10.7036C7.94242 11.4087 7.64108 11.9571 7.64108 13.054C7.64108 16.8871 9.88907 17.2125 12.119 17.4596C11.8297 17.7188 11.5705 18.1647 11.4801 18.8036C10.9076 19.0627 9.44309 19.5087 8.5692 17.9658C8.02077 17.0136 7.03237 16.9353 7.03237 16.9353C6.05603 16.9232 6.96608 17.55 6.96608 17.55C7.61697 17.8513 8.07501 19.0085 8.07501 19.0085C8.65961 20.7984 11.456 20.1958 11.456 20.1958C11.456 21.0335 11.4681 22.3955 11.4681 22.6426C11.4681 22.9018 11.2873 23.2152 10.775 23.1248C6.79733 21.7929 4.01295 18.008 4.01295 13.5844C4.01295 8.05179 8.24376 3.85112 13.7763 3.85112C19.3089 3.85112 23.7929 8.05179 23.7929 13.5844C23.7989 18.008 21.0989 21.7989 17.1212 23.1248ZM11.2089 19.4424C11.0944 19.4665 10.9859 19.4183 10.9739 19.34C10.9618 19.2496 11.0402 19.1712 11.1547 19.1471C11.2692 19.135 11.3777 19.1833 11.3897 19.2616C11.4078 19.34 11.3295 19.4183 11.2089 19.4424ZM10.6364 19.3882C10.6364 19.4665 10.546 19.5328 10.4255 19.5328C10.2929 19.5449 10.2025 19.4786 10.2025 19.3882C10.2025 19.3098 10.2929 19.2435 10.4134 19.2435C10.5279 19.2315 10.6364 19.2978 10.6364 19.3882ZM9.81072 19.3219C9.78661 19.4002 9.66608 19.4364 9.56362 19.4002C9.44911 19.3761 9.37077 19.2857 9.39487 19.2074C9.41898 19.129 9.53952 19.0929 9.64197 19.117C9.76251 19.1531 9.84086 19.2435 9.81072 19.3219ZM9.06943 18.9964C9.01519 19.0627 8.90068 19.0507 8.81027 18.9603C8.71987 18.8819 8.69577 18.7674 8.75603 18.7132C8.81028 18.6469 8.92478 18.6589 9.01519 18.7493C9.09353 18.8277 9.12367 18.9482 9.06943 18.9964ZM8.52099 18.448C8.46675 18.4842 8.36429 18.448 8.298 18.3576C8.2317 18.2672 8.2317 18.1647 8.298 18.1225C8.36429 18.0683 8.46675 18.1105 8.52099 18.2009C8.58728 18.2913 8.58728 18.3998 8.52099 18.448ZM8.12925 17.8634C8.07501 17.9176 7.98461 17.8875 7.91831 17.8272C7.85202 17.7489 7.83996 17.6585 7.8942 17.6163C7.94844 17.5621 8.03885 17.5922 8.10514 17.6525C8.17144 17.7308 8.18349 17.8212 8.12925 17.8634ZM7.72545 17.4174C7.70135 17.4717 7.623 17.4837 7.5567 17.4415C7.47836 17.4054 7.44219 17.3391 7.4663 17.2848C7.49041 17.2487 7.5567 17.2306 7.63505 17.2607C7.7134 17.3029 7.74956 17.3692 7.72545 17.4174Z"
+                                    fill="#C8C8C8" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.youtube.com/channel/UCdsR55sf2HO2ga-PX4FagBw">
+                            <svg width="28" height="27" viewBox="0 0 28 27" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M24.1102 0C25.9308 0 27.4089 1.47814 27.4089 3.29875V23.7013C27.4089 25.5219 25.9308 27 24.1102 27H3.70768C1.88708 27 0.408936 25.5219 0.408936 23.7013V3.29875C0.408936 1.47814 1.88703 0 3.70768 0L24.1102 0ZM23.0045 9.26174C22.7862 8.44494 22.143 7.80168 21.3262 7.58341C19.8455 7.18664 13.9089 7.18664 13.9089 7.18664C13.9089 7.18664 7.97236 7.18664 6.49169 7.58341C5.67504 7.80168 5.03168 8.44494 4.81336 9.26174C4.41675 10.7423 4.41675 13.8313 4.41675 13.8313C4.41675 13.8313 4.41675 16.9202 4.81336 18.4006C5.03168 19.2174 5.67504 19.8608 6.49169 20.0791C7.97236 20.4757 13.9089 20.4757 13.9089 20.4757C13.9089 20.4757 19.8455 20.4757 21.3262 20.0791C22.143 19.8608 22.7862 19.2174 23.0045 18.4006C23.4011 16.9202 23.4011 13.8313 23.4011 13.8313C23.4011 13.8313 23.4011 10.7423 23.0045 9.26174ZM12.0104 16.679V10.9836L16.9426 13.8313L12.0104 16.679Z"
+                                    fill="#C8C8C8" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+
+</html>

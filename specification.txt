@@ -1,0 +1,4 @@
+1. 10 HTML tags: header, main, footer, nav, ul, li, span, p, a, img.
+2. 5 css properties: margin, background-image, color, list-style, align-items.
+3. Javascript: to blink nav bar background of site, i chose use setInterver of js to toggle display the navbar
+4. Boostrap: to make site layout and responsive, UI look good in all divices, i chose grid system of boostrap, also to quick make a form, a nav, and hide the nav in mobile device.
